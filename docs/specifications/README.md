@@ -90,3 +90,9 @@ specification says so explicitly instead of describing the implementation as if 
 | [`trade/payout-seen-in-network.md`](trade/payout-seen-in-network.md) | When a payout transaction seen in the wallet completes a trade, and why a confirmed payout is accepted without its witness data. |
 | [`trade/mediated-payout-peer-signature.md`](trade/mediated-payout-peer-signature.md) | How the peer's signature of the mediated payout is checked, and that a signature which arrives before the mediation result is kept until the result is applied. |
 | [`trade/mediated-payout-detection.md`](trade/mediated-payout-detection.md) | How a trader who accepted a mediation result detects the mediated payout: from the peer's message and from its wallet, which it watches again after a restart. |
+
+### `wallet/`
+
+| Specification | Covers |
+|---|---|
+| [`wallet/btc-withdrawal-amount.md`](wallet/btc-withdrawal-amount.md) | How the entered amount of a BTC withdrawal becomes the receiver's and the sender's amount with the fee included or excluded, the dust limit of the receiver's output, and the checks the desktop runs before the fee estimation. |
