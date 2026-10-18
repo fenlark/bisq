@@ -23,6 +23,10 @@ the offer. The take screen reports it, and no second popup repeats the maker's t
 
 A timeout is not an answer. It is still reported as the maker being offline.
 
+An answer counts only if it is signed with the signature key of the offer. The sender chooses the
+address of an inbound connection, so an answer that only claims the maker's address is ignored, and
+the request ends with the timeout if the maker does not answer.
+
 ## A maker who ignores the taker
 
 A maker's ignore list is private to the maker, and the offer book does not show it. The node learns
