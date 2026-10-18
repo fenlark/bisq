@@ -59,9 +59,6 @@ below the dust limit is reported as lower than the fee and the dust limit.
 - With the fee excluded, if the selected inputs exceed the amount plus the fee by less than
   bitcoinj's change limit, the estimation does not settle on a fee: the fee without a change output
   leaves a change output, and the fee of a transaction with a change output leaves the remainder in
-  the fee. After ten rounds the estimation uses the transaction without a change output, so the user
-  pays the remainder plus the fee of a change output more than needed. The confirmation shows that
-  fee. bitcoinj's change limit, the estimation does not settle on a fee: the fee without a change
-  output leaves a change output, and the fee with it leaves the remainder in the fee. After ten
-  rounds the estimation uses the last one, so the user pays up to the remainder plus the fee of a
-  change output more than needed. The confirmation shows that fee.
+  the fee. After ten rounds the estimation uses the transaction of its last round, which has no
+  change output, so the user pays the remainder plus the fee of a change output more than needed.
+  The confirmation shows that fee.
